@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
 nav {
   width: 85%;
   margin: auto;
@@ -12,6 +17,7 @@ nav {
   font-family: 'Ibarra Real Nova', serif;
   border-bottom: 2px solid #e04c59;
   margin: 5px auto 15px auto;
+  scroll-snap-align: center;
 }
 
 .nav-links {
@@ -58,6 +64,7 @@ nav {
   color: #747474;
   font-size: 18px;
   padding-left: 10px;
+  text-decoration: none;
 }
 
 .logo img {
@@ -69,6 +76,23 @@ nav {
 .container {
   width: 80%;
   margin: auto;
+}
+
+.container section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 @media screen and (max-width: 768px) {

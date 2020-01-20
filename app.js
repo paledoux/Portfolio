@@ -5,6 +5,7 @@ const navSlide = () => {
 
   burger.addEventListener('click', () => {
     nav.classList.toggle('nav-active');
+    burger.classList.toggle('toggle');
 
     //   navLinks.forEach((link, index) => {
     //     if (link.style.animation) {
@@ -16,6 +17,13 @@ const navSlide = () => {
     //   });
 
     //   burger.classList.toggle('toggle');
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      burger.classList.remove('toggle');
+      nav.classList.remove('nav-active');
+    }
   });
 };
 
