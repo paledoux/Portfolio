@@ -41,6 +41,14 @@ nav {
   color: #e04c59;
 }
 
+.nav-links a:visited {
+  color: #747474;
+}
+
+.nav-links a:active {
+  color: #747474;
+}
+
 .burger {
   display: none;
 }
