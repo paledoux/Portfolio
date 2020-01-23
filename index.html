@@ -20,11 +20,11 @@
         <h1>Philippe-Antoine Ledoux</h1>
       </a>
 
-      <ul class="nav-links">
-        <li><a href="/">Acceuil</a></li>
+      <ul class="nav-links nav-closed">
+        <!-- <li><a href="/">Accueil</a></li> -->
         <li><a href="#about-me">À propos</a></li>
         <li><a href="#projects">Mes projets</a></li>
-        <li><a href="#">Me contacter</a></li>
+        <li><a href="#contact-me">Me contacter</a></li>
       </ul>
       <div class="burger">
         <div class="line1"></div>
@@ -49,8 +49,23 @@
         </p>
       </section>
 
-      <section id="projects" class="projects">
+      <section id="projects" class="projects snap">
         <h1>Mes projets</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel
+          iaculis tortor. Pellentesque in luctus dui. Aliquam vulputate felis at
+          velit lobortis convallis. Nullam at enim at ex dignissim pretium. Duis
+          placerat varius nibh, euismod scelerisque libero varius sed. Maecenas
+          vestibulum, turpis a porttitor interdum, ex est fermentum augue, sit
+          amet aliquet odio purus nec dui. Fusce commodo, leo sed molestie
+          fringilla, ipsum lacus lobortis mi, et maximus turpis nisl et sem.
+          Nunc quis est sed mi lobortis placerat et sed quam. Mauris ut suscipit
+          est. Praesent ac libero dui.
+        </p>
+      </section>
+
+      <section id="contact-me" class="contact-me snap">
+        <h1>Me contacter</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel
           iaculis tortor. Pellentesque in luctus dui. Aliquam vulputate felis at
@@ -66,5 +81,9 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="smooth-scroll.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
   </body>
 </html>
