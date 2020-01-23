@@ -16,7 +16,6 @@ nav {
   top: 0px;
   background-color: #fff;
   padding-top: 5px;
-  /* min-height: 60px; */
 }
 
 .nav-links {
@@ -86,13 +85,7 @@ nav {
 }
 
 .container section {
-  z-index: -1;
-  height: 100vh;
-  padding-top: 70px;
-}
-
-.snap {
-  scroll-snap-align: center;
+  height: calc(100vh - 60px);
 }
 
 .toggle .line1 {
@@ -122,8 +115,9 @@ nav {
     grid-auto-flow: row;
     grid-column: 1/4;
     overflow: hidden;
-    transition: max-height 0.5s ease-in;
+    transition: max-height 1s ease-out;
     height: auto;
+    max-height: 0px;
   }
 
   .nav-closed {
