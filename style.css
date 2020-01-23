@@ -110,6 +110,18 @@ nav {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+@media screen and (max-width: 372px) {
+  .logo h1 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .logo h1 {
+    font-size: 17px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .logo img {
     width: 40px;
