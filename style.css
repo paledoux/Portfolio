@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  /* background-color: #f2f2f2; */
+}
+
 nav {
   width: 100%;
   margin: auto;
@@ -14,6 +18,8 @@ nav {
   /* margin: 0px auto 15px auto; */
   position: fixed;
   top: 0px;
+  /* background-color: #f2f2f2; */
+  /* background-color: #eeeeee; */
   background-color: #fff;
   padding-top: 5px;
 }
@@ -28,7 +34,9 @@ nav {
 .nav-links li {
   text-align: center;
   list-style: none;
-  font-size: 20px;
+  font-size: 18px;
+  /* font-weight: bold; */
+  /* text-transform: uppercase; */
 }
 
 .nav-links a {
@@ -86,7 +94,6 @@ nav {
 }
 
 .container section {
-  /* height: calc(100vh - 60px); */
   height: 100vmax;
   padding-top: 70px;
 }
@@ -105,7 +112,7 @@ nav {
 
 @media screen and (max-width: 768px) {
   .logo img {
-    width: 50px;
+    width: 40px;
     height: 50px;
   }
 
