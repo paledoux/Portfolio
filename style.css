@@ -103,14 +103,15 @@ nav {
   padding-top: 70px;
 }
 
+.projects {
+  display: grid;
+  grid-template-rows: min-content auto;
+}
+
 .projects > h1 {
   text-align: center;
   color: #e04c59;
-  /* text-transform: uppercase; */
-}
-
-.projects {
-  display: grid;
+  font-size: 2em;
 }
 
 .project {
@@ -151,7 +152,7 @@ nav {
   text-transform: uppercase;
   text-decoration: none;
   background: #e04c59;
-  padding: 18px;
+  padding: 15px;
   border-radius: 3px;
   border: none;
   cursor: pointer;
@@ -233,12 +234,6 @@ nav {
 
   .details h1 {
     font-size: 18px;
-    color: #747474;
-    text-transform: uppercase;
-  }
-
-  .details p {
-    color: #747474;
   }
 
   .container {
