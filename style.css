@@ -243,6 +243,7 @@ nav {
 
   .project img {
     max-width: 70%;
+    max-height: 60%;
   }
 }
 
@@ -259,6 +260,10 @@ nav {
 
   .btn {
     padding: 16px;
+  }
+
+  .project img {
+    max-width: 95%;
   }
 }
 
