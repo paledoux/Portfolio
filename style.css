@@ -5,8 +5,9 @@
 }
 
 nav {
-  width: 100%;
-  margin: auto;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   font-family: 'Ibarra Real Nova', serif;
@@ -92,7 +93,7 @@ nav {
 }
 
 .container {
-  width: 75%;
+  width: 70%;
   margin: auto;
   display: grid;
 }
@@ -108,6 +109,10 @@ nav {
   /* text-transform: uppercase; */
 }
 
+.projects {
+  display: grid;
+}
+
 .project {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -120,7 +125,7 @@ nav {
   width: 100%;
   height: 100%;
   border-radius: 3px;
-  max-height: 390px;
+  max-height: 80%;
 }
 
 .details {
@@ -146,7 +151,7 @@ nav {
   text-transform: uppercase;
   text-decoration: none;
   background: #e04c59;
-  padding: 20px;
+  padding: 18px;
   border-radius: 3px;
   border: none;
   cursor: pointer;
@@ -156,7 +161,27 @@ nav {
   border-bottom: 2px solid #e04c59;
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 85%;
+  }
+
+  nav {
+    width: 90%;
+  }
+
+  .project img {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  nav {
+    width: 100%;
+  }
+
   .logo img {
     width: 40px;
     height: 50px;
@@ -219,6 +244,16 @@ nav {
   .container {
     width: 98%;
   }
+
+  .project img {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .project img {
+    max-width: 90%;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -234,12 +269,6 @@ nav {
 @media screen and (max-width: 320px) {
   .btn {
     padding: 10px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .container {
-    width: 90%;
   }
 }
 
