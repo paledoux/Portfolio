@@ -112,6 +112,7 @@ nav {
   text-align: center;
   color: #e04c59;
   font-size: 2em;
+  padding-bottom: 15px;
 }
 
 .project {
@@ -189,7 +190,7 @@ nav {
   }
 
   .logo h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .nav-links {
