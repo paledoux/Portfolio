@@ -108,6 +108,10 @@ nav {
   grid-template-rows: min-content auto;
 }
 
+.projects > div:nth-of-type(even) .details {
+  order: 2;
+}
+
 .projects > h1 {
   text-align: center;
   color: #e04c59;
@@ -220,6 +224,10 @@ nav {
     grid-row: 1;
     justify-self: end;
     margin: auto 0 auto 0;
+  }
+
+  .projects > div:nth-of-type(even) img {
+    order: 2;
   }
 
   .project {
